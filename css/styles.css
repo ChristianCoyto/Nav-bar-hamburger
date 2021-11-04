@@ -11,7 +11,7 @@
     user-select: none;
   }
 
-  nav div.logo{
+  nav .logo{
     color: #ffffffd6;
     font-size: 33px;
     font-weight: bold;
@@ -20,7 +20,7 @@
     transition: hover .3s ease;
   }
 
-  nav div.logo:hover{
+  nav .logo:hover{
     color: white;
   }
 
@@ -34,12 +34,12 @@
     align-items: center;
   }
 
-  nav div.div_contenedor ul li{
+  nav .div_contenedor ul li{
     display: inline-block;
     position: relative;
   }
 
-  nav div.div_contenedor ul li a{
+  nav .div_contenedor ul li a{
     color: #ffffffe8;
     display: block;
     padding: 0 15px;
@@ -47,8 +47,9 @@
     transition: .3s;
   }
 
-  nav div.div_contenedor ul li a:hover,
-  nav div.div_contenedor ul li a.active{
+
+  nav .div_contenedor ul li a:hover,
+  nav .div_contenedor ul li a.active{
     color: #23dbdb;
   }
 
@@ -95,7 +96,7 @@
     height: 100vh;
   }
 
-  nav div.div_contenedor.is-active {
+  nav .div_contenedor.is-active {
     transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
@@ -114,7 +115,7 @@
           line-height: 55px;
       }
 
-      nav div.div_contenedor ul{
+      nav .div_contenedor ul{
         padding-bottom: 13px;
       }
   }
@@ -132,7 +133,7 @@
       height: 70px;
     }
 
-    nav div.logo{
+    nav .logo{
       margin-left: 20px;
     }
 
@@ -140,7 +141,7 @@
       margin-right: 15px;
     }
 
-    nav div.div_contenedor {
+    nav .div_contenedor {
       position: fixed;
       z-index: 998;
       top: 0px;
@@ -150,11 +151,11 @@
       overflow: visible;
       opacity: 0;
       visibility: hidden;
-      transition: transform 0.5s ease;
-      transform: translate(-100%, 0);
+      transition: transform .5s ease;
+      transform: translateX(-100%);
     }
 
-    nav div.div_contenedor ul{
+    nav .div_contenedor ul{
       width: 100%;
       height: 100vh;
       padding-top: 15px;
@@ -178,7 +179,7 @@
       background-color: #ffffff12;
     }
 
-    nav div.div_contenedor ul li a {
+    nav .div_contenedor ul li a {
           text-shadow: 4px 2px 3px #000000a8;
 
     }
